@@ -64,7 +64,7 @@
       transform: translateY(-50%);
       width: 6px;
       height: 5px;
-      background-image: url("./img/sprite/icon-arrow-down.svg");
+      background-image: url("../img/sprite/icon-arrow-down.svg");
 
       @include vp-1023 {
         display: none;
