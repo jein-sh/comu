@@ -1,0 +1,19 @@
+.title {
+  margin: 0;
+  font-size: 42px;
+  line-height: 126%;
+  font-weight: 700;
+
+  @include vp-1023 {
+    font-size: 30px;
+  }
+
+  &--m {
+    font-size: 38px;
+  }
+
+  &--wide {
+    letter-spacing: 0.01em;
+  }
+}
+

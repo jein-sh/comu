@@ -1,0 +1,25 @@
+.text {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 148%;
+  letter-spacing: 0.03em;
+  color: $color-gun-powder;
+  margin: 0;
+
+  p {
+    margin: 0;
+
+    &:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &--s {
+    font-size: 15px;
+  }
+
+  &--b {
+    font-weight: 700;
+    font-size: 20px;
+  }
+}

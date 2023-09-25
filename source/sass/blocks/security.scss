@@ -1,0 +1,59 @@
+.security {
+  padding: 118px 0;
+
+  .container {
+    max-width: 1196px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    max-width: 601px;
+    text-align: center;
+    margin: 0 auto 100px;
+
+    font-family: $ff-roboto;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+    color: $color-eclipse;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+
+    @include vp-1023 {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    flex-shrink: 0;
+    margin-right: 167px;
+
+    @include vp-1023 {
+      margin: 0;
+    }
+  }
+
+  &__info {
+    margin-top: 40px;
+  }
+
+  .text {
+    margin-bottom: 15px;
+  }
+
+  .store-links {
+    margin-top: 42px;
+  }
+}

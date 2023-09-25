@@ -1,0 +1,15 @@
+.store-links {
+  display: flex;
+  gap: 10px;
+
+  a {
+    transition: transform $trans-default;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

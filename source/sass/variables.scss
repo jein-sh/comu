@@ -1,0 +1,43 @@
+// Colors
+// ---------------------------------
+$color-default-black:               #000000;
+$color-default-white:               #ffffff;
+$color-floral-white:                #fffcf5;
+$color-alice-blue:                  #f3fcff;
+$color-atomic-tangerine:            #fe9563;
+$color-cooper:                      #ff8762;
+$color-san-juan:                    #455a64;
+$color-gun-powder:                  #535359;
+$color-eclipse:                     #393939;
+$color-suva-grey:                   #8f8f8f;
+$color-atomic:                      #37474f;
+$color-black-rock:                  #353642;
+$color-charcoal:                    #424242;
+
+//Gradients
+//----------------------------------
+
+$gradient-yellow:                   linear-gradient(300.2deg, #F5F2EB 1.26%, #F7E6CB 100.49%);
+$gradient-yellow-2:                 linear-gradient(90.14deg, #F7E6CB 0%, #F5F2EA 99.44%);
+$gradient-yellow-3:                 linear-gradient(102.02deg, #F7E6CB 0%, #F5F2EB 100%);
+
+
+// Typography
+// ---------------------------------
+$ff-roboto:                         "Roboto", "Arial", sans-serif;
+$ff-poppins:                        "Poppins", "Arial", sans-serif;
+
+//Transition
+//----------------------------------
+$trans-default: 0.3s ease;
+
+// Viewports
+// ---------------------------------
+$vp-768:                            768px;
+$vp-1024:                           1024px;
+$vp-1280:                           1280px;
+
+// Retina
+// ---------------------------------
+$retina-dpi:                        199dpi;
+$retina-dppx:                       2dppx;

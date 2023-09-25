@@ -1,0 +1,86 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 363px;
+    padding: 40px 36px;
+    box-shadow: 5px 5px 13px $color-cooper;
+    border-radius: 44px;
+    background: $gradient-yellow;
+
+    &:not(:last-child) {
+      margin-right: 62px;
+    }
+
+    @include vp-1279 {
+      padding: 20px;
+      flex: 1;
+    }
+
+    @include vp-767 {
+      max-width: none;
+
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  &__image {
+    position: relative;
+    width: 76px;
+    height: 76px;
+    margin-bottom: 16px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 64px;
+      height: 64px;
+      background-color: $color-atomic-tangerine;
+      z-index: 1;
+    }
+
+    svg {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+  }
+
+  &__title {
+    font-family: $ff-roboto;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: $color-atomic;
+    margin: 0 0 10px;
+    text-align: center;
+  }
+
+  &__text {
+    text-align: center;
+    margin: 0;
+
+    p {
+      margin: 0;
+    }
+  }
+}

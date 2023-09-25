@@ -1,0 +1,68 @@
+.button {
+  display: inline-flex;
+  padding: 9px 28px;
+  justify-content: center;
+  align-items: center;
+  font-family: $ff-roboto;
+  border: 2px solid $color-atomic-tangerine;
+  border-radius: 8px;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $color-default-black;
+
+  background-color: transparent;
+  cursor: pointer;
+  user-select: none;
+
+  transition: opacity $trans-default, background-color $trans-default, color $trans-default;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      background-color: $color-atomic-tangerine;
+      color: $color-alice-blue;
+    }
+  }
+
+  &--poppins {
+    font-family: $ff-poppins;
+    border: 3px solid $color-atomic-tangerine;
+    border-radius: 5px;
+    padding: 3px 15px;
+  }
+
+  &--dark {
+    border: none;
+    border-radius: 6px;
+    color: $color-alice-blue;
+    background-color: $color-san-juan;
+    padding: 9px 25px;
+  }
+
+  &--orange {
+    border: none;
+    border-radius: 8px;
+    color: $color-alice-blue;
+    background-color: $color-atomic-tangerine;
+    padding: 9px 28px;
+    font-family: $ff-roboto;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        background-color: $color-san-juan;
+      }
+    }
+  }
+
+
+
+  &:disabled {
+    opacity: 0.4;
+
+    pointer-events: none;
+  }
+}
+

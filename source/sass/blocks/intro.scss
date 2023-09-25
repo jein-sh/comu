@@ -1,0 +1,141 @@
+.intro {
+  min-height: 746px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 144px 0 98px;
+  background-image: url("../../img/content/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+
+  @include vp-1023 {
+    min-height: 200px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    max-width: 1050px;
+
+    @include vp-767 {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    width: 434px;
+    height: 474px;
+    flex-shrink: 0;
+    margin: 0 20px 0 87px;
+
+    @include vp-1023 {
+      width: 50%;
+      height: auto;
+    }
+
+    @include vp-767 {
+      margin: 20px 0 0;
+      align-self: flex-end;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      user-select: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    color: $color-san-juan;
+    font-weight: 700;
+
+
+    @include vp-767 {
+      align-items: center;
+    }
+  }
+
+  .title {
+    margin: 0 0 17px;
+
+    @include vp-767 {
+      text-align: center;
+    }
+  }
+
+  .text {
+    margin: 0 0 26px;
+
+    @include vp-767 {
+      text-align: center;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .button--dark {
+    margin-right: 10px;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 21px;
+    transition: color $trans-default;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        color: $color-atomic-tangerine;
+      }
+    }
+  }
+
+  &__link-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21px;
+    height: 26px;
+    margin-right: 6px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__tags {
+    display: flex;
+  }
+
+  &__tag {
+    position: relative;
+    margin: 0;
+    font-size: 12px;
+    line-height: 23px;
+
+    &:not(:last-child) {
+      margin-right: 14px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -7px;
+        transform: translateY(-50%);
+        width: 2px;
+        height: 14px;
+        background-color: $color-atomic-tangerine;
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 10px;
+
+  @include vp-1023 {
+    position: absolute;
+    top: -5px;
+    right: 25px;
+    width: 200px;
+    min-height: 300px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 20px 0 20px 20px;
+    padding: 20px;
+    background-color: $color-floral-white;
+    box-shadow: 5px 5px 13px $color-cooper;
+    transition: opacity $trans-default;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -26px -10px 0;
+    padding: 0;
+
+    @include vp-1023 {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0;
+      flex: 1;
+    }
+  }
+
+  &__item {
+    position: relative;
+    font-family: $ff-poppins;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 26px 10px 0;
+
+    a {
+      transition: color $trans-default;
+
+      @media (hover: hover), screen and (min-width: 0\0) {
+        &:hover,
+        &:focus {
+          color: $color-atomic-tangerine;
+        }
+      }
+    }
+
+    &--with-sub::after {
+      content: "";
+      position: absolute;
+      right: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 5px;
+      background-image: url("../../img/sprite/icon-arrow-down.svg");
+
+      @include vp-1023 {
+        display: none;
+      }
+    }
+  }
+
+  &__sublist {
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    visibility: hidden;
+    opacity: 0;
+
+    &.is-opened {
+      opacity: 1;
+      visibility: visible;
+      background-color: $color-floral-white;
+      box-shadow: 5px 5px 13px $color-cooper;
+      transition: opacity $trans-default;
+      border-radius: 20px 0 20px 20px;
+      top: 20px;
+      right: 0;
+      width: 200px;
+      height: fit-content;
+      padding: 20px;
+    }
+
+    @include vp-1023 {
+      opacity: 1;
+      visibility: visible;
+      position: static;
+    }
+  }
+
+  .button {
+    margin-left: 18px;
+  }
+
+  .is-opened & {
+    @include vp-1023 {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

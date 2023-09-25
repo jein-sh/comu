@@ -1,0 +1,33 @@
+.share {
+  padding: 116px 0 105px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    max-width: 1112px;
+
+    @include vp-1023 {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    flex-shrink: 0;
+    margin: 0 81px 10px 10px;
+
+    @include vp-1023 {
+      margin: 0;
+    }
+  }
+
+  .title {
+    color: $color-san-juan;
+    margin-bottom: 17px;
+  }
+
+  .text {
+    p:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+}

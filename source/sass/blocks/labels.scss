@@ -1,0 +1,50 @@
+.labels {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 23px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    background: $color-default-white;
+    box-shadow: 0px 9px 17px rgba($color-default-black, 0.09);
+    border-radius: 13px;
+    width: 299px;
+    padding: 13px 16px 17px;
+
+    @include vp-767 {
+      width: 100%;
+    }
+  }
+
+  &__icon {
+    width: 33px;
+    height: 33px;
+    margin-right: 16px;
+    flex-shrink: 0;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    font-family: $ff-roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  &__text {
+    font-family: $ff-roboto;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px;
+    margin: -4px 0 0;
+  }
+}
