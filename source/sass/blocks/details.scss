@@ -1,5 +1,5 @@
 .details {
-  .container {
+  &__container {
     max-width: 1272px;
   }
 
@@ -7,6 +7,10 @@
     display: flex;
     align-items: center;
     padding: 135px 83px 135px 91px;
+
+    @include vp-1279 {
+      padding: 70px;
+    }
 
     @include vp-1023 {
       padding: 50px;
@@ -22,6 +26,7 @@
     @include vp-1279 {
       width: 50%;
       height: auto;
+      margin-left: 50px;
     }
 
     @include vp-1023 {
@@ -77,7 +82,4 @@
     line-height: 26px;
     color: $color-atomic;
   }
-
-
-
 }

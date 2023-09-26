@@ -1,7 +1,7 @@
 .share {
   padding: 116px 0 105px;
 
-  .container {
+  &__container {
     display: flex;
     align-items: center;
     max-width: 1112px;
@@ -20,12 +20,12 @@
     }
   }
 
-  .title {
+  &__title {
     color: $color-san-juan;
     margin-bottom: 17px;
   }
 
-  .text {
+  &__text {
     p:not(:last-child) {
       margin-bottom: 25px;
     }

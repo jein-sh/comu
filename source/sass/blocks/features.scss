@@ -1,12 +1,12 @@
 .features {
-  .container {
+  &__container {
     max-width: 1306px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .title {
+  &__title {
     max-width: 640px;
     text-align: center;
     margin-bottom: 52px;
@@ -14,7 +14,12 @@
 
   &__wrapper {
     display: flex;
+    justify-content: space-between;
     padding: 56px 156px 66px;
+
+    @include vp-1439 {
+      padding: 56px 70px;
+    }
 
     @include vp-1023 {
       padding: 50px;
@@ -67,6 +72,11 @@
 
   &__downloads {
     margin-right: 80px;
+    flex-shrink: 0;
+
+    @include vp-1279 {
+      margin-right: 40px;
+    }
 
     @include vp-1023 {
       margin-right: 30px;

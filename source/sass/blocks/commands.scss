@@ -1,7 +1,7 @@
 .commands {
   padding: 105px 0 94px;
 
-  .container {
+  &__container {
     max-width: 1177px;
     display: flex;
     align-items: center;
@@ -12,6 +12,10 @@
     height: 590px;
     flex-shrink: 0;
     margin-right: 114px;
+
+    @include vp-1439 {
+      margin-right: 100px;
+    }
 
     @include vp-1023 {
       width: 50%;
@@ -34,18 +38,18 @@
     margin-top: 0px;
   }
 
-  .title {
+  &__title {
     margin-bottom: 15px;
     color: $color-black-rock;
   }
 
-  .text {
+  &__text {
     font-family: $ff-roboto;
     color: $color-eclipse;
     margin-bottom: 36px;
   }
 
-  .button {
+  &__button {
     min-width: 149px;
   }
 }

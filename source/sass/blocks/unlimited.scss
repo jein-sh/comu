@@ -1,5 +1,5 @@
 .unlimited {
-  .container {
+  &__container {
     max-width: 1306px;
   }
 
@@ -36,11 +36,11 @@
     }
   }
 
-  .title {
+  &__title {
     margin-bottom: 15px;
   }
 
-  .text {
+  &__text {
     margin-bottom: 20px;
     color:$color-eclipse;
   }
@@ -79,7 +79,7 @@
         content: "";
         position: absolute;
         top: 50%;
-        right: -10px;
+        right: -13px;
         transform: translateY(-50%);
         width: 3px;
         height: 13px;

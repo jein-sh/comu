@@ -1,14 +1,14 @@
 .questions {
   padding: 115px 0 93px;
 
-  .container {
+  &__container {
     max-width: 1090px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .title {
+  &__title {
     margin-bottom: 15px;
     text-align: center;
   }
@@ -64,7 +64,7 @@
     }
   }
 
-  .form {
+  &__form {
     margin-top: 21px;
     align-self: stretch;
     width: 100%;

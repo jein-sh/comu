@@ -1,7 +1,7 @@
 .security {
   padding: 118px 0;
 
-  .container {
+  &__container {
     max-width: 1196px;
   }
 
@@ -49,11 +49,16 @@
     margin-top: 40px;
   }
 
-  .text {
+  &__text {
     margin-bottom: 15px;
+    color: $color-eclipse;
   }
 
-  .store-links {
+  h3.security__text {
+    color: $color-default-black;
+  }
+
+  &__store-links {
     margin-top: 42px;
   }
 }

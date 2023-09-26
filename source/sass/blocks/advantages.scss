@@ -1,14 +1,14 @@
 .advantages {
   padding-bottom: 86px;
 
-  .container {
+  &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 1273px;
   }
 
-  .title {
+  &__title.title {
     margin-bottom: 15px;
     text-align: center;
   }
@@ -29,10 +29,24 @@
     }
   }
 
-  .cards__text {
-    font-family: $ff-roboto;
-    font-size: 15px;
-    line-height: 23px;
-    color: $color-default-black;
+  &__cards {
+    .cards__image::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 64px;
+      height: 64px;
+      background-color: $color-atomic-tangerine;
+      z-index: 1;
+    }
+
+    .cards__text {
+      font-family: $ff-roboto;
+      font-size: 15px;
+      line-height: 23px;
+      color: $color-default-black;
+    }
   }
 }

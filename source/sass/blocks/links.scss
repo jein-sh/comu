@@ -1,7 +1,7 @@
 .links {
   padding: 113px 0 44px;
 
-  .container {
+  &__container {
     display: flex;
     max-width: 995px;
 
@@ -10,7 +10,7 @@
     }
   }
 
-  .logo {
+  &__logo {
     margin-bottom: 19px;
   }
 
@@ -46,7 +46,7 @@
     flex-direction: column;
   }
 
-  .store-links {
+  &__store-links {
     margin-top: auto;
   }
 

@@ -1,5 +1,5 @@
 .favorite {
-  .container {
+  &__container {
     max-width: 1306px;
   }
 
@@ -36,11 +36,11 @@
     }
   }
 
-  .title {
+  &__title {
     margin-bottom: 15px;
   }
 
-  .text {
+  &__text {
     line-height: 126%;
     color: $color-charcoal;
 

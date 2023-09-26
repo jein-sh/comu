@@ -1,5 +1,5 @@
 .automation {
-  .container {
+  &__container {
     max-width: 1273px;
   }
 
@@ -42,14 +42,14 @@
 
   &__info {
     margin-top: 25px;
+  }
 
-    .title {
-      margin-bottom: 15px;
-    }
+  &__title {
+    margin-bottom: 15px;
+  }
 
-    .text {
-      font-size: $ff-roboto;
-      margin-bottom: 19px;
-    }
+  &__text {
+    font-family: $ff-roboto;
+    margin-bottom: 19px;
   }
 }

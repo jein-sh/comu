@@ -1,18 +1,18 @@
 .moments {
   padding: 110px 0 108px;
 
-  .container {
+  &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .title {
+  &__title {
     margin-bottom: 15px;
     text-align: center;
   }
 
-  .text {
+  &__text {
     font-family: $ff-roboto;
     color: $color-eclipse;
     margin-bottom: 56px;
@@ -35,7 +35,7 @@
     }
   }
 
-  .button {
+  &__button {
     margin: -31px 0 25px;
   }
 
@@ -62,7 +62,7 @@
         content: "";
         position: absolute;
         top: 50%;
-        right: -8px;
+        right: -9px;
         transform: translateY(-50%);
         width: 2px;
         height: 15px;

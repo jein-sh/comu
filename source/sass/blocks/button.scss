@@ -1,11 +1,12 @@
 .button {
   display: inline-flex;
-  padding: 9px 28px;
+  padding: 7px 28px;
   justify-content: center;
   align-items: center;
   font-family: $ff-roboto;
   border: 2px solid $color-atomic-tangerine;
   border-radius: 8px;
+  min-height: 40px;
 
   font-size: 14px;
   line-height: 21px;
@@ -31,6 +32,7 @@
     border: 3px solid $color-atomic-tangerine;
     border-radius: 5px;
     padding: 3px 15px;
+    min-height: 31px;
   }
 
   &--dark {
@@ -38,7 +40,7 @@
     border-radius: 6px;
     color: $color-alice-blue;
     background-color: $color-san-juan;
-    padding: 9px 25px;
+    padding: 7px 25px;
   }
 
   &--orange {
@@ -46,7 +48,7 @@
     border-radius: 8px;
     color: $color-alice-blue;
     background-color: $color-atomic-tangerine;
-    padding: 9px 28px;
+    padding: 7px 28px;
     font-family: $ff-roboto;
 
     @media (hover: hover), screen and (min-width: 0\0) {
@@ -56,8 +58,6 @@
       }
     }
   }
-
-
 
   &:disabled {
     opacity: 0.4;
